@@ -1,5 +1,6 @@
 package com.example.course_backend_app.controller;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,5 +12,11 @@ public class CourseController {
     public  String AddCouse()
     {
         return "added";
+    }
+
+    @GetMapping("/viewall")
+    public  String ViewakkCourse()
+    {
+        return "view all";
     }
 }
